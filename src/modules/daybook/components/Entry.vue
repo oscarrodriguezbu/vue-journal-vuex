@@ -32,7 +32,7 @@ export default {
         shortText() {
             return ( this.entry.text.length > 130 )
                 ? this.entry.text.substring(0,130) + '...'
-                : this.entry.text
+                : this.entry.text //substring para cortar los caracteres 
         },
         day() {
             const date = new Date( this.entry.date )
